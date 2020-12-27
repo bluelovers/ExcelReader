@@ -8,6 +8,10 @@
 ExcelReader is an ide plugin. Can parse files in three formats of <b>xls, xlsx, csv</b> 
 in some editors of JetBrains, and supports simple filtering functions.
 
+![er_example](https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelReader/docs/er_example.png)
+![er_light](https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelReader/docs/er_light.png)
+![er_dark](https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelReader/docs/er_dark.png)
+
 # Installation
 ### Install in the IDE
 Open "File" - “Settings” - “Plugins”, select “Marketplace”, enter `ExcelReader` and click `install` to install to the IDE.

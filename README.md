@@ -8,6 +8,10 @@
 ExcelReader是一款ide插件。可以在JetBrains的部分编辑器中解析
 <b>xls，xlsx，csv</b> 三种格式的文件，并且支持简单的过滤功能。
 
+![er_example](https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelReader/docs/er_example.png)
+![er_light](https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelReader/docs/er_light.png)
+![er_dark](https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelReader/docs/er_dark.png)
+
 # 安装
 ### 在IDE里面进行安装
 打开 "File" - “Settings” - “Plugins”，选择 “Marketplace”，输入 `ExcelReader` ，点击 `install` 即可安装到IDE。
