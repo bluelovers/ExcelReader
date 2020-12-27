@@ -6,7 +6,7 @@
 
 </p>
 ExcelReader is an ide plugin. Can parse files in three formats of <b>xls, xlsx, csv</b> 
-in some editors of JetBrains, and supports simple filtering functions。
+in some editors of JetBrains, and supports simple filtering functions.
 
 # Installation
 ### Install in the IDE
@@ -32,4 +32,4 @@ The shortcut keys of different platforms are slightly different.
 After opening a file, 
 simple search operations can be performed on the top of the Excel Reader interface.
 Select `All Column` to search in all columns; 
-select a specific column to search only in the selected column。
+select a specific column to search only in the selected column.
