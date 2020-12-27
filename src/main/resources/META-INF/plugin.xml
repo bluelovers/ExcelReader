@@ -1,0 +1,59 @@
+<idea-plugin>
+  <id>com.chesterccw.excelreader</id>
+  <name>ExcelReader</name>
+  <version>2.0.2</version>
+  <vendor email="chesterccw@163.com" url="http://www.xuegaogame.com">IceGames</vendor>
+
+  <description><![CDATA[
+      This is a plugin for Excel file.
+      You can read the file content in IDEA.
+      Don't need to open excel application.
+      Three formats of [xls, xlsx, csv] are supported.
+    ]]></description>
+
+  <change-notes><![CDATA[
+      - 2020-12-19
+        <ul>
+            <li>Fix the problem that the plugin does not work properly in version 2020.3.</li>
+        </ul>
+      - 2020-08-02
+        <ul>
+            <li>Support quick opening (double click).</li>
+        </ul>
+      - 2020-07-19
+        <ul>
+            <li>Idea201 (2020.1) and later versions are supported.</li>
+        </ul>
+      - 2020-07-04
+        <ul>
+            <li>Adapt the UI Theme in Dark model and Light model.</li>
+        </ul>
+      - 2020-06-09
+        <ul>
+            <li>Add data filtering function.</li>
+        </ul>
+  ]]></change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="201.0"/>
+
+  <depends>com.intellij.modules.platform</depends>
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!--<depends>com.intellij.modules.platform</depends>-->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+    <fileType name="MyNative" implementationClass="com.chesterccw.excelreader.filetype.MyExcelNativeFileType" fieldName="INSTANCE"
+              extensions="xls;xlsx;csv" order="first"/>
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="Reader" class="com.chesterccw.excelreader.ExcelReaderAction" text="Open As ExcelReader" description="The tool you can read the &lt;*.xls&gt; file in IDEA.">
+      <add-to-group group-id="ProjectViewPopupMenu" anchor="first"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="control shift D"/>
+    </action>
+  </actions>
+
+</idea-plugin>

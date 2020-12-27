@@ -1,0 +1,37 @@
+plugins {
+  id 'java'
+  id 'org.jetbrains.intellij' version '0.4.21'
+}
+
+group pluginGroup
+version pluginVersion
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile group: 'cn.hutool', name: 'hutool-all', version: '5.3.7'
+  compile group: 'org.apache.poi', name: 'poi-ooxml', version: '4.1.2'
+}
+
+// See https://github.com/JetBrains/gradle-intellij-plugin/
+intellij {
+  pluginName = pluginName
+  version = platformVersion as Object
+  downloadSources = platformDownloadSources.toBoolean()
+  updateSinceUntilBuild = true
+}
+
+buildSearchableOptions {
+  enabled = false
+}
+
+patchPluginXml {
+  version = project.version
+  sinceBuild = pluginSinceBuild
+  untilBuild = pluginUntilBuild
+}
