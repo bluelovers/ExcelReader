@@ -15,6 +15,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import javax.swing.*;
+import java.util.Objects;
 
 public final class MyExcelNativeFileType implements INativeFileType {
 
@@ -56,7 +57,7 @@ public final class MyExcelNativeFileType implements INativeFileType {
     @NotNull
     @Override
     public Icon getIcon() {
-        return IconLoader.getIcon("/images/excel.svg");
+        return Objects.requireNonNull(IconLoader.findIcon("/images/excel.svg"));
     }
 
     @Override

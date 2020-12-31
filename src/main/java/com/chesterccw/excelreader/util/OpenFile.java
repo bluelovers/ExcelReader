@@ -14,6 +14,9 @@ import com.intellij.util.ui.UIUtil;
 import javax.swing.*;
 import java.util.function.Supplier;
 
+/**
+ * @author obiscr
+ */
 public class OpenFile {
 
     private static final OpenFile INSTANCE = new OpenFile();
@@ -38,8 +41,8 @@ public class OpenFile {
         }
         Supplier<String> supplier = () -> "ExcelReader";
         Icon icon = UIUtil.isUnderDarcula() ?
-                IconLoader.getIcon("/images/excel_toolwindow_dark.svg") :
-                IconLoader.getIcon("/images/excel_toolwindow.svg");
+                IconLoader.findIcon("/images/excel_toolwindow_dark.svg") :
+                IconLoader.findIcon("/images/excel_toolwindow.svg");
         RegisterToolWindowTask task = new RegisterToolWindowTask(
                 "ExcelReader", ToolWindowAnchor.BOTTOM,
                 panel,false,true,true,

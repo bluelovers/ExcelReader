@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>com.chesterccw.excelreader</id>
   <name>ExcelReader</name>
-  <version>2.0.2</version>
+  <version>2.0.3</version>
   <vendor email="chesterccw@163.com" url="http://www.xuegaogame.com">IceGames</vendor>
 
   <description><![CDATA[
@@ -12,30 +12,48 @@
     ]]></description>
 
   <change-notes><![CDATA[
-      - 2020-12-19
-        <ul>
-            <li>Fix the problem that the plugin does not work properly in version 2020.3.</li>
-        </ul>
-      - 2020-08-02
-        <ul>
-            <li>Support quick opening (double click).</li>
-        </ul>
-      - 2020-07-19
-        <ul>
-            <li>Idea201 (2020.1) and later versions are supported.</li>
-        </ul>
-      - 2020-07-04
-        <ul>
-            <li>Adapt the UI Theme in Dark model and Light model.</li>
-        </ul>
-      - 2020-06-09
-        <ul>
-            <li>Add data filtering function.</li>
-        </ul>
+      <p>2.0.3</p>
+      <ul>
+          <li>
+            Fix 2 usages of deprecated API.
+          </li>
+          <li>
+            Fix the problem that cannot be used in IDE (201 ~ 201.6668.113) Build version.<br/>
+          </li>
+      </ul>
+      <p>For more details, see <a href='https://github.com/obiscr/ExcelReader/wiki/Update#whats-new'>
+       What’s New in ExcelReader 2.0.3</a>.</p><br/>
+
+      <p>2.0.2</p>
+      <ul>
+          <li>Fix the problem that the plugin does not work properly in version 2020.3.</li>
+      </ul><br/>
+
+
+      <p>1.0.2</p>
+      <ul>
+          <li>Support quick opening (double click).</li>
+      </ul><br/>
+
+
+      <p>2.0.1</p>
+      <ul>
+          <li>Idea201 (2020.1) and later versions are supported.</li>
+      </ul><br/>
+
+      <p>1.0.1</p>
+      <ul>
+          <li>Adapt the UI Theme in Dark model and Light model.</li>
+      </ul><br/>
+
+      <p>1.0.0</p>
+      <ul>
+          <li>Add data filtering function.</li>
+      </ul>
   ]]></change-notes>
 
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-  <idea-version since-build="201.0"/>
+  <idea-version since-build="201.6668.113"/>
 
   <depends>com.intellij.modules.platform</depends>
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
