@@ -26,7 +26,7 @@ public class TableTool {
 	 * @param table JTable
 	 */
 	public void setTableStyle(JTable table) {
-		// 设置选中项背景
+		// set bg for selected item
 		table.setSelectionBackground(new JBColor(new Color(48, 106, 190), new Color(48, 106, 190)));
 		table.setSelectionForeground(Gray._255);
 		// 设置行高
@@ -67,7 +67,7 @@ public class TableTool {
 	}
 
 	/**
-	 * 设置 JScrollPane 的样式
+	 * set JScrollPane style
 	 * @param scrollPane JScrollPane
 	 */
 	public void setJspStyle(JScrollPane scrollPane) {
