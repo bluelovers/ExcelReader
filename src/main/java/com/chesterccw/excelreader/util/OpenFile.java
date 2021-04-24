@@ -30,7 +30,7 @@ public class OpenFile {
     }
 
     public void open(ExcelReaderAction.Data data, Project project){
-        MyToolWindow toolWindow = new MyToolWindow(data.header,data.rows);
+        MyToolWindow toolWindow = new MyToolWindow(data);
         toolWindow.init();
         MyToolWindowFactory toolWindowFactory = new MyToolWindowFactory(toolWindow);
         JPanel panel = toolWindow.mainPanel;

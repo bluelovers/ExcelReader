@@ -10,7 +10,6 @@ import java.util.Vector;
 
 /**
  * @author chesterccw
- * @date 2020/7/17
  */
 public class MyTableModel extends DefaultTableModel {
 
@@ -20,6 +19,11 @@ public class MyTableModel extends DefaultTableModel {
         this.rows = rows;
         this.header = header;
         setDataVector(rows,header);
+    }
+
+    @Override
+    public void setDataVector(Vector<? extends Vector> dataVector, Vector<?> columnIdentifiers) {
+        super.setDataVector(dataVector, columnIdentifiers);
     }
 
     @Override

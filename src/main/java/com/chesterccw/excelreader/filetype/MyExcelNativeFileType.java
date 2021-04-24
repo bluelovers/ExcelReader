@@ -77,7 +77,9 @@ public final class MyExcelNativeFileType implements INativeFileType {
     }
 
     public boolean openInExcelReader(@NotNull final VirtualFile file){
-        ExcelReaderAction.Data data = new ResolveData(file).resolve();
+        ResolveData resolveData = ResolveData.getInstance();
+        resolveData.setValue(file);
+        ExcelReaderAction.Data data = resolveData.resolve(0);
         IdeFrame lastFocusedFrame = IdeFocusManagerImpl.getGlobalInstance().getLastFocusedFrame();
         if(lastFocusedFrame == null){
             return false;

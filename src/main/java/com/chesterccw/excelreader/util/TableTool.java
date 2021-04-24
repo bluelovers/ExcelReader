@@ -2,11 +2,13 @@ package com.chesterccw.excelreader.util;
 
 import com.intellij.ui.Gray;
 import com.intellij.ui.JBColor;
+import com.intellij.ui.table.JBTable;
 import com.intellij.util.ui.UIUtil;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.JTableHeader;
+import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableColumn;
 import java.awt.*;
 import java.util.Enumeration;
@@ -25,28 +27,26 @@ public class TableTool {
 	 * 设置 JTable 样式
 	 * @param table JTable
 	 */
-	public void setTableStyle(JTable table) {
+	public void setTableStyle(JBTable table) {
 		// set bg for selected item
 		table.setSelectionBackground(new JBColor(new Color(48, 106, 190), new Color(48, 106, 190)));
 		table.setSelectionForeground(Gray._255);
-		// 设置行高
 		table.setAutoCreateRowSorter(true);
-		table.setRowHeight(27);
+		table.setRowHeight(20);
+
+		DefaultTableCellRenderer headerRenderer = new DefaultTableCellRenderer();
+		headerRenderer.setHorizontalAlignment(SwingConstants.LEFT);
+		table.getTableHeader().setDefaultRenderer(headerRenderer);
+
 		MyTableCellRenderer r = new MyTableCellRenderer();
 		r.setHorizontalAlignment(SwingConstants.LEFT);
 		table.setDefaultRenderer(Object.class, r);
 		table.getTableHeader().setFont(MyFont.Bold);
 		table.setFont(MyFont.Common);
-		fitTableColumns(table);
 		setDefaultColumnColor(table);
 	}
 
-	/**
-	 * 设置 JTable 列宽
-	 * @param table JTable
-	 */
-	private void fitTableColumns(JTable table) {
-		table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
+	private static void unfoldAllCol(JTable table) {
 		JTableHeader header = table.getTableHeader();
 		int rowCount = table.getRowCount();
 		Enumeration<TableColumn> columns = table.getColumnModel().getColumns();
@@ -57,13 +57,41 @@ public class TableTool {
 					.getTableCellRendererComponent(table, column.getIdentifier()
 							, false, false, -1, col).getPreferredSize().getWidth();
 			for (int row = 0; row < rowCount; row++) {
-				int preferedWidth = (int) table.getCellRenderer(row, col).getTableCellRendererComponent(table,
+				int tempWidth = (int) table.getCellRenderer(row, col).getTableCellRendererComponent(table,
 						table.getValueAt(row, col), false, false, row, col).getPreferredSize().getWidth();
-				width = Math.max(width, preferedWidth);
+				width = Math.max(width, tempWidth);
 			}
 			header.setResizingColumn(column);
-			column.setWidth(width + table.getIntercellSpacing().width + 20);
+			column.setWidth(width + table.getIntercellSpacing().width);
 		}
+	}
+
+	public static void unfoldCol(JTable table, int col) {
+		if (table == null) {
+			return;
+		}
+
+		if (col < 0) {
+			unfoldAllCol(table);
+			return;
+		}
+
+		JTableHeader header = table.getTableHeader();
+		TableColumn column = table.getColumn(table.getColumnName(col));
+		int rowCount = table.getRowCount();
+		int width = (int) table.getTableHeader().getDefaultRenderer()
+				.getTableCellRendererComponent(table, column.getIdentifier()
+						, false, false,
+						-1, col).getPreferredSize().getWidth();
+		for (int row = 0; row < rowCount; row++) {
+			int tempWidth = (int) table.getCellRenderer(row, col).
+					getTableCellRendererComponent(table,
+							table.getValueAt(row, col), false, false,
+							row, col).getPreferredSize().getWidth();
+			width = Math.max(width, tempWidth);
+		}
+		header.setResizingColumn(column);
+		column.setWidth(width + table.getIntercellSpacing().width + 20);
 	}
 
 	/**
@@ -123,6 +151,11 @@ public class TableTool {
 				}
 			}
 			return super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
+		}
+
+		@Override
+		public void setHorizontalAlignment(int alignment) {
+			super.setHorizontalAlignment(alignment);
 		}
 	}
 
