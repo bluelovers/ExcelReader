@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>com.chesterccw.excelreader</id>
   <name>ExcelReader</name>
-  <version>2.0.4</version>
+  <version>2.0.5</version>
   <vendor email="chesterccw@163.com" url="http://www.xuegaogame.com">IceGames</vendor>
 
   <description><![CDATA[
@@ -12,6 +12,19 @@
     ]]></description>
 
   <change-notes><![CDATA[
+      <p>2.0.5</p>
+      <ul>
+          <li>
+            Support to open multiple sheet tabs (XLS and XLSX only).
+          </li>
+          <li>
+            Adjust the UI display and reduce the line spacing appropriately.
+          </li>
+      </ul>
+      <p>For more details, see <a href='https://github.com/obiscr/ExcelReader/wiki/What%E2%80%99s-New-in-ExcelReader-2.0.5'>
+       What’s New in ExcelReader 2.0.5</a> and <a href='https://github.com/obiscr/ExcelReader/wiki'>
+       the wiki</a>.</p><br/>
+
       <p>2.0.4</p>
       <ul>
           <li>
