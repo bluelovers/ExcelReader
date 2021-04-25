@@ -1,11 +1,8 @@
 package com.chesterccw.excelreader.ui;
 
-import cn.hutool.core.util.StrUtil;
 import com.chesterccw.excelreader.ExcelReaderAction;
 import com.chesterccw.excelreader.ui.components.MyTableModel;
-import com.chesterccw.excelreader.ui.components.MyTableMouseListener;
 import com.chesterccw.excelreader.util.Constant;
-import com.chesterccw.excelreader.util.MyFont;
 import com.chesterccw.excelreader.util.ResolveData;
 import com.chesterccw.excelreader.util.TableTool;
 
@@ -18,8 +15,6 @@ import com.intellij.util.ui.JBUI;
 import org.apache.commons.lang3.StringUtils;
 
 import javax.swing.*;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import javax.swing.table.TableRowSorter;
@@ -70,24 +65,19 @@ public class MyToolWindow implements DocumentListener {
     private JBScrollPane initTablePanel() {
         JBTable table;
         MyTableModel tableModel;
-        TableTool tool = new TableTool();
         tableModel = new MyTableModel(rows,header);
         table = new JBTable(tableModel);
         // table.setCellSelectionEnabled(true);
-        MyTableMouseListener listener = new MyTableMouseListener();
-        table.addMouseListener(listener);
-        tool.setTableStyle(table);
+        TableTool.setTableStyle(table);
         scrollPane = new JBScrollPane(table);
-        tool.setJspStyle(scrollPane);
+        TableTool.setJspStyle(scrollPane);
         return scrollPane;
     }
 
     private void initToolBar(){
         filterPanel = new JPanel(new BorderLayout());
         comboBox = new ComboBox<>(getComboBoxSelection());
-        comboBox.setFont(MyFont.Common);
         filter = new SearchTextField();
-        filter.setFont(MyFont.Common);
         filter.getTextEditor().getDocument().addDocumentListener(this);
         filterPanel.add(comboBox,BorderLayout.WEST);
         filterPanel.add(filter,BorderLayout.CENTER);
@@ -125,6 +115,7 @@ public class MyToolWindow implements DocumentListener {
         model.setDataVector(rows,header);
         refreshComboBox();
         searchInTable(filter.getText());
+        TableTool.fitTableColumns(table);
     }
 
     public void refreshComboBox(){

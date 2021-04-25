@@ -1,8 +1,8 @@
 <idea-plugin>
   <id>com.chesterccw.excelreader</id>
   <name>ExcelReader</name>
-  <version>2.0.5</version>
-  <vendor email="chesterccw@163.com" url="http://www.xuegaogame.com">IceGames</vendor>
+  <version>2.0.6</version>
+  <vendor email="piercebrands@gmail.com" url="https://github.com/obiscr">Pierce Brands</vendor>
 
   <description><![CDATA[
       This is a plugin for Excel file.
@@ -12,6 +12,19 @@
     ]]></description>
 
   <change-notes><![CDATA[
+      <p>2.0.6</p>
+      <ul>
+          <li>
+            <strong>If you are using version 2.0.5, it is highly recommended to update to this version.</strong>
+          </li>
+          <li>
+            Fix some columns that don't expand automatically.
+          </li>
+          <li>
+            Fix the problem of unclear font display on Windows platform and Linux platform.
+          </li>
+      </ul><br/>
+
       <p>2.0.5</p>
       <ul>
           <li>
@@ -30,7 +43,7 @@
           <li>
             Support the version 2021.1.
           </li>
-      </ul>
+      </ul><br/>
 
       <p>2.0.3</p>
       <ul>
