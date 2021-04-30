@@ -8,9 +8,15 @@
 ExcelReader是一款ide插件。可以在JetBrains的部分编辑器中解析
 <b>xls，xlsx，csv</b> 三种格式的文件，并且支持简单的过滤功能。
 
-![er_example](https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelReader/docs/er_example.png)
-![er_light](https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelReader/docs/er_light.png)
-![er_dark](https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelReader/docs/er_dark.png)
+![Image_Multi_Sheet.gif](https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelReader/docs/Image_Multi_Sheet.gif?versionId=CAEQUBiBgIDR2YK6yBciIDZlODBlNjA4NmNlZDQyYTdiZmY0OWRiYzg2ZTA0MTE2)
+
+![Image_CSV](https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelReader/docs/Image_CSV.png?versionId=CAEQUBiBgMCkvJK6yBciIDllYjgxNDk5Y2YyZjQ1ZWU4M2VjMjY3NjVhNjBlYTBh)
+
+![Image_XLS](https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelReader/docs/Image_XLS.png?versionId=CAEQUBiBgMCdvJK6yBciIDFlZGVjNzcwZmEzYzRkN2JiMzE0N2Y1ZGQ5NTllMDFk)
+
+![Image_XLSX](https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelReader/docs/Image_XLSX.png?versionId=CAEQUBiBgICPvJK6yBciIGI0MGI5MGU1MGVhYzQxMzJhZmY2NWU4ZWNmNmRhNGQ2)
+
+![Dark_Model](https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelReader/docs/Dark_Model.png?versionId=CAEQUBiBgICWvJK6yBciIDljNmYwZDY1YmRkYjQwZThiZDFkNjc4MTIxYzBhOTk0)
 
 # 安装
 ### 在IDE里面进行安装
