@@ -44,3 +44,21 @@ After opening a file,
 simple search operations can be performed on the top of the Excel Reader interface.
 Select `All Column` to search in all columns; 
 select a specific column to search only in the selected column.
+
+# Support/Donate
+
+If you like this plugin, you can consider:
++ Give this project a Star
++ Submit your thoughts or suggestions
+
+And if you have financial resources, you can also consider supporting developers.
+
+|  <a href='https://www.buymeacoffee.com/piercebrands'>Buy Me A Coffee(Click to Go)</a>   | Alipay  | WeChat Pay  |
+|  ----  | ----  | ----  |
+| <a href='https://www.buymeacoffee.com/piercebrands'><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/donate/bmcoffice.jpg?versionId=CAEQUBiBgICIkP_MzBciIDgzNTE2MTU5NGJjZjQ0OTE4ZjJjZTEwNzBjMThhODcx" width = "280" height = "280" alt="buymeacoffee" align=center /></a>  | <img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/donate/alipay.jpg?versionId=CAEQUBiBgICZjvjMzBciIGRiOTI1Nzk0NDExYjQwN2JhZWFmOTE3MmYxNWE4MzI1" width = "300" height = "300" alt="支付宝" align=center /> | <img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/donate/weipay.jpg?versionId=CAEQUBiBgICljvjMzBciIGU5ZmRlYmMwYzNhZjQzNjFhY2ZkZmYyNTUxNTllZTU4" width = "300" height = "300" alt="微信" align=center />  |
+
+Please send after the donation is successful, your name, website, and message to: <a href='mailto:piercebrands@gmail.com'><b>piercebrands@gmail.com</b></a>
+
+And the name, website and other information you provided will be added to the list of donors.
+
+Finally, thank you for your support!

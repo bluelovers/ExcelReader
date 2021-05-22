@@ -39,3 +39,21 @@ ExcelReader 同时支持快捷键打开，选中文件后，按下对应的快�
 打开一个文件之后，ExcelReader界面最上面可以进行简单的搜索操作。
 
 选择 `All Column`，是在所有列中搜索；选择某个具体的列，则只在选择的列中进行搜索。
+
+# 支持/捐赠
+
+如果您喜欢这款插件，可以考虑：
++ 给这个项目点个Star
++ 提交您的想法或者建议
+
+并且您要是经济条件宽裕， 也可以考虑支持开发者。
+
+|  <a href='https://www.buymeacoffee.com/piercebrands'>Buy Me A Coffee(点击跳转)</a>   | 支付宝  | 微信  |
+|  ----  | ----  | ----  |
+| <a href='https://www.buymeacoffee.com/piercebrands'><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/donate/bmcoffice.jpg?versionId=CAEQUBiBgICIkP_MzBciIDgzNTE2MTU5NGJjZjQ0OTE4ZjJjZTEwNzBjMThhODcx" width = "280" height = "280" alt="buymeacoffee" align=center /></a>  | <img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/donate/alipay.jpg?versionId=CAEQUBiBgICZjvjMzBciIGRiOTI1Nzk0NDExYjQwN2JhZWFmOTE3MmYxNWE4MzI1" width = "300" height = "300" alt="支付宝" align=center /> | <img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/donate/weipay.jpg?versionId=CAEQUBiBgICljvjMzBciIGU5ZmRlYmMwYzNhZjQzNjFhY2ZkZmYyNTUxNTllZTU4" width = "300" height = "300" alt="微信" align=center />  |
+
+捐赠成功之后请发送，您的姓名、网站、留言到：<a href='mailto:piercebrands@gmail.com'><b>piercebrands@gmail.com</b></a>
+
+并且您提供的名字、网站等信息会被添加到捐赠者列表中。
+
+最后感谢您的支持！
