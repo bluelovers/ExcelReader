@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>com.chesterccw.excelreader</id>
   <name>ExcelReader</name>
-  <version>2.0.6</version>
+  <version>2.0.7</version>
   <vendor email="piercebrands@gmail.com" url="https://github.com/obiscr">Pierce Brands</vendor>
 
   <description><![CDATA[
@@ -9,9 +9,22 @@
       You can read the file content in IDEA.
       Don't need to open excel application.
       Three formats of [xls, xlsx, csv] are supported.
+
+      <p><a href='https://github.com/obiscr/ExcelReader'><b>Github</b></a>|
+      <a href='https://github.com/obiscr/ExcelReader'><b>Donate</b></a></p>
     ]]></description>
 
   <change-notes><![CDATA[
+      <p>2.0.7</p>
+      <ul>
+          <li>
+            Fix bug <a href='https://github.com/obiscr/ExcelReader/issues/2'>#2</a>.
+          </li>
+          <li>
+            Fix bug <a href='https://github.com/obiscr/ExcelReader/issues/3'>#3</a>.
+          </li>
+      </ul><br/>
+
       <p>2.0.6</p>
       <ul>
           <li>
