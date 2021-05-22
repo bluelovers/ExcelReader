@@ -84,10 +84,10 @@ public class MyToolWindow implements DocumentListener {
     }
 
     private void initSheetPane() {
+        sheetPane = new JBTabbedPane();
         if (sheetMap == null){
             return;
         }
-        sheetPane = new JBTabbedPane();
         sheetPane.setTabPlacement(JBTabbedPane.BOTTOM);
         sheetPane.setTabComponentInsets(JBUI.emptyInsets());
         for (Map.Entry<Integer,String> entry : sheetMap.entrySet()) {
@@ -138,10 +138,10 @@ public class MyToolWindow implements DocumentListener {
     }
 
     public void searchInTable(String insertValue){
-        if (insertValue == null) {
+        JBScrollPane scrollPane = (JBScrollPane) sheetPane.getSelectedComponent();
+        if (insertValue == null || scrollPane == null) {
             return;
         }
-        JBScrollPane scrollPane = (JBScrollPane) sheetPane.getSelectedComponent();
         JBTable table = (JBTable) scrollPane.getViewport().getComponent(0);
         MyTableModel tableModel = (MyTableModel) table.getModel();
         TableRowSorter<MyTableModel> sorter = new TableRowSorter<>(tableModel);
