@@ -5,12 +5,12 @@
   <vendor email="piercebrands@gmail.com" url="https://github.com/obiscr">Pierce Brands</vendor>
 
   <description><![CDATA[
-      This is a plugin for Excel file.
+      <p>This is a plugin for Excel file.
       You can read the file content in IDEA.
       Don't need to open excel application.
-      Three formats of [xls, xlsx, csv] are supported.
-      <br/>
-      <p><a href='https://github.com/obiscr/ExcelReader'><b>Github</b></a>|
+      Three formats of [xls, xlsx, csv] are supported.</p>
+      <br>
+      <p><a href='https://github.com/obiscr/ExcelReader'><b>Github</b></a> |
       <a href='https://github.com/obiscr/ExcelReader'><b>Donate</b></a></p>
     ]]></description>
 
